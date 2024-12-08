@@ -8,7 +8,7 @@ $newMarkdownCommandHelpSplat = @{
 }
 New-MarkdownCommandHelp @newMarkdownCommandHelpSplat
 
-Measure-PlatyPSMarkdown -Path ./*.md || Where-Object Filetype -match CommandHelp | Update-MarkdownCommandHelp -Path {$_.FilePath}
+Measure-PlatyPSMarkdown -Path ./*.md | Where-Object Filetype -match CommandHelp | Update-MarkdownCommandHelp -Path {$_.FilePath}
 
 
 #>
