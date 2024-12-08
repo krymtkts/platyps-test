@@ -1,3 +1,17 @@
+<#
+
+$newMarkdownCommandHelpSplat = @{
+    ModuleInfo = Get-Module platyps-test
+    OutputFolder = '.'
+    HelpVersion = '1.0.0.0'
+    WithModulePage = $true
+}
+New-MarkdownCommandHelp @newMarkdownCommandHelpSplat
+
+Measure-PlatyPSMarkdown -Path ./*.md || Where-Object Filetype -match CommandHelp | Update-MarkdownCommandHelp -Path {$_.FilePath}
+
+
+#>
 function Test-FunctionForPlatyPS {
     [CmdletBinding()]
     param (
