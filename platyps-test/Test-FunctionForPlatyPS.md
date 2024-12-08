@@ -1,7 +1,7 @@
 ﻿---
 document type: cmdlet
 external help file: platyps-test-Help.xml
-HelpUri: ''
+HelpUri: ""
 Locale: en-US
 Module Name: platyps-test
 ms.date: 12-08-2024
@@ -17,7 +17,7 @@ title: Test-FunctionForPlatyPS
 
 ## SYNTAX
 
-### __AllParameterSets
+### \_\_AllParameterSets
 
 ```
 Test-FunctionForPlatyPS [-Value1] <string> [-Value2 <string>] [<CommonParameters>]
@@ -43,42 +43,48 @@ Value1
 
 ```yaml
 Type: System.String
-DefaultValue: ''
+DefaultValue: ""
 SupportsWildcards: false
 ParameterValue: []
 Aliases: []
 ParameterSets:
-- Name: (All)
-  Position: 0
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: true
-  ValueFromRemainingArguments: false
+  - Name: (All)
+    Position: 0
+    IsRequired: true
+    ValueFromPipeline: true
+    ValueFromPipelineByPropertyName: true
+    ValueFromRemainingArguments: false
 DontShow: false
 AcceptedValues: []
-HelpMessage: ''
+HelpMessage: ""
 ```
 
 ### -Value2
 
 {{ Fill Value2 Description }}
 
+| Name | Note |
+| ---- | ---- |
+| `A`  |      |
+| `B`  |      |
+| `C`  |      |
+
 ```yaml
 Type: System.String
-DefaultValue: ''
+DefaultValue: ""
 SupportsWildcards: false
 ParameterValue: []
 Aliases: []
 ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
+  - Name: (All)
+    Position: Named
+    IsRequired: false
+    ValueFromPipeline: false
+    ValueFromPipelineByPropertyName: false
+    ValueFromRemainingArguments: false
 DontShow: false
-AcceptedValues: []
-HelpMessage: ''
+AcceptedValues: [A, B, C]
+HelpMessage: ""
 ```
 
 ### CommonParameters
@@ -107,4 +113,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 {{ Fill in the related links here }}
-
