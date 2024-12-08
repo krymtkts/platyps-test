@@ -1,4 +1,5 @@
 <#
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.platyps/?view=ps-modules
 
 $newMarkdownCommandHelpSplat = @{
     ModuleInfo = Get-Module platyps-test
