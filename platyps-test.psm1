@@ -4,7 +4,7 @@ $newMarkdownCommandHelpSplat = @{
     ModuleInfo = Get-Module platyps-test
     OutputFolder = '.'
     HelpVersion = '1.0.0.0'
-    WithModulePage = $true
+    WithModulePage = $false
 }
 New-MarkdownCommandHelp @newMarkdownCommandHelpSplat
 
