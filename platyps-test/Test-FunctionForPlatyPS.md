@@ -1,4 +1,4 @@
----
+﻿---
 document type: cmdlet
 external help file: platyps-test-Help.xml
 HelpUri: ''
@@ -24,9 +24,6 @@ Test-FunctionForPlatyPS [-Value1] <string> [-Value2 <string>] [<CommonParameters
 ```
 
 ## ALIASES
-
-This cmdlet has the following aliases,
-  {{Insert list of aliases}}
 
 ## DESCRIPTION
 

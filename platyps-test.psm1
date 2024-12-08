@@ -8,7 +8,9 @@ $newMarkdownCommandHelpSplat = @{
 }
 New-MarkdownCommandHelp @newMarkdownCommandHelpSplat
 
-Measure-PlatyPSMarkdown -Path ./*.md | Where-Object Filetype -match CommandHelp | Update-MarkdownCommandHelp -Path {$_.FilePath}
+Measure-PlatyPSMarkdown -Path ./platyps-test/*.md | Where-Object Filetype -match CommandHelp | Update-MarkdownCommandHelp -Path {$_.FilePath} -NoBackup
+
+Measure-PlatyPSMarkdown -Path ./platyps-test/*.md | Where-Object Filetype -match CommandHelp | Import-MarkdownCommandHelp -Path {$_.FilePath} | Export-MamlCommandHelp -OutputFolder .\Maml
 
 
 #>
